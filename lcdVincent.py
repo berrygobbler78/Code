@@ -15,7 +15,7 @@ import adafruit_character_lcd.character_lcd as characterlcd
 lcd = characterlcd.Character_LCD_Mono(lcd_rs, lcd_en, lcd_d4, lcd_d5, lcd_d6, lcd_d7, lcd_columns, lcd_rows)
 
 while True:
-    lcd.message = "balls"
+    lcd.message = "Vicent is so\n cute :3"
     time.sleep(2)
     for i in range(14):
         time.sleep(0.3)
