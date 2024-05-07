@@ -1,11 +1,11 @@
 import board
 import digitalio
-lcd_rs = digitalio.DigitalInOut(board.D11)
-lcd_en = digitalio.DigitalInOut(board.D12)
-lcd_d7 = digitalio.DigitalInOut(board.D35)
-lcd_d6 = digitalio.DigitalInOut(board.D33)
-lcd_d5 = digitalio.DigitalInOut(board.D31)
-lcd_d4 = digitalio.DigitalInOut(board.D29)
+lcd_rs = digitalio.DigitalInOut(board.D0)
+lcd_en = digitalio.DigitalInOut(board.D1)
+lcd_d7 = digitalio.DigitalInOut(board.D24)
+lcd_d6 = digitalio.DigitalInOut(board.D23)
+lcd_d5 = digitalio.DigitalInOut(board.D22)
+lcd_d4 = digitalio.DigitalInOut(board.D21)
 
 lcd_columns = 16
 lcd_rows = 2
