@@ -16,7 +16,6 @@ lcd = characterlcd.Character_LCD_Mono(lcd_rs, lcd_en, lcd_d4, lcd_d5, lcd_d6, lc
 
 while True:
     lcd.message = "Im gonna\n touch you"
-    lcd.message = lcd.scroll_msg
     time.sleep(2)
     for i in range(14):
         time.sleep(0.3)
