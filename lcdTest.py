@@ -1,3 +1,4 @@
+import time
 import board
 import digitalio
 lcd_rs = digitalio.DigitalInOut(board.D2)
@@ -13,6 +14,12 @@ lcd_rows = 2
 import adafruit_character_lcd.character_lcd as characterlcd
 lcd = characterlcd.Character_LCD_Mono(lcd_rs, lcd_en, lcd_d4, lcd_d5, lcd_d6, lcd_d7, lcd_columns, lcd_rows)
 
-lcd.clear()
-
-lcd.message = "hello"
+while True:
+    lcd.message = "Im gonna\n touch you"
+    lcd.message = lcd.scroll_msg
+    time.sleep(2)
+    for i in range(14):
+        time.sleep(0.3)
+        lcd.move_left()
+    time.sleep(1)
+    lcd.clear()
